@@ -5,7 +5,6 @@ import favicon from './images/bookshelf.svg'
 import checkicon from './images/check.svg'
 import placeholder from './images/placeholder.jpg'
 
-
 // Add event listeners
 document.querySelector('#sort-selection').addEventListener ('change', UI.handleSortChange)
 document.querySelector(".add-btn").addEventListener('click', UI.handleAddBookButton)

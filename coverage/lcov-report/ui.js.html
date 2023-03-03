@@ -1,0 +1,445 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Code coverage report for ui.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="prettify.css" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+    
+<body>
+<div class='wrapper'>
+    <div class='pad1'>
+        <h1><a href="index.html">All files</a> ui.js</h1>
+        <div class='clearfix'>
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">5.76% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>3/52</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>0/16</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">0% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>0/14</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">5.76% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>3/52</span>
+            </div>
+        
+            
+        </div>
+        <p class="quiet">
+            Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
+        </p>
+        <template id="filterTemplate">
+            <div class="quiet">
+                Filter:
+                <input oninput="onInput()" type="search" id="fileSearch">
+            </div>
+        </template>
+    </div>
+    <div class='status-line low'></div>
+    <pre><table class="coverage">
+<tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
+<a name='L2'></a><a href='#L2'>2</a>
+<a name='L3'></a><a href='#L3'>3</a>
+<a name='L4'></a><a href='#L4'>4</a>
+<a name='L5'></a><a href='#L5'>5</a>
+<a name='L6'></a><a href='#L6'>6</a>
+<a name='L7'></a><a href='#L7'>7</a>
+<a name='L8'></a><a href='#L8'>8</a>
+<a name='L9'></a><a href='#L9'>9</a>
+<a name='L10'></a><a href='#L10'>10</a>
+<a name='L11'></a><a href='#L11'>11</a>
+<a name='L12'></a><a href='#L12'>12</a>
+<a name='L13'></a><a href='#L13'>13</a>
+<a name='L14'></a><a href='#L14'>14</a>
+<a name='L15'></a><a href='#L15'>15</a>
+<a name='L16'></a><a href='#L16'>16</a>
+<a name='L17'></a><a href='#L17'>17</a>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a>
+<a name='L28'></a><a href='#L28'>28</a>
+<a name='L29'></a><a href='#L29'>29</a>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a>
+<a name='L35'></a><a href='#L35'>35</a>
+<a name='L36'></a><a href='#L36'>36</a>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a>
+<a name='L46'></a><a href='#L46'>46</a>
+<a name='L47'></a><a href='#L47'>47</a>
+<a name='L48'></a><a href='#L48'>48</a>
+<a name='L49'></a><a href='#L49'>49</a>
+<a name='L50'></a><a href='#L50'>50</a>
+<a name='L51'></a><a href='#L51'>51</a>
+<a name='L52'></a><a href='#L52'>52</a>
+<a name='L53'></a><a href='#L53'>53</a>
+<a name='L54'></a><a href='#L54'>54</a>
+<a name='L55'></a><a href='#L55'>55</a>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a>
+<a name='L78'></a><a href='#L78'>78</a>
+<a name='L79'></a><a href='#L79'>79</a>
+<a name='L80'></a><a href='#L80'>80</a>
+<a name='L81'></a><a href='#L81'>81</a>
+<a name='L82'></a><a href='#L82'>82</a>
+<a name='L83'></a><a href='#L83'>83</a>
+<a name='L84'></a><a href='#L84'>84</a>
+<a name='L85'></a><a href='#L85'>85</a>
+<a name='L86'></a><a href='#L86'>86</a>
+<a name='L87'></a><a href='#L87'>87</a>
+<a name='L88'></a><a href='#L88'>88</a>
+<a name='L89'></a><a href='#L89'>89</a>
+<a name='L90'></a><a href='#L90'>90</a>
+<a name='L91'></a><a href='#L91'>91</a>
+<a name='L92'></a><a href='#L92'>92</a>
+<a name='L93'></a><a href='#L93'>93</a>
+<a name='L94'></a><a href='#L94'>94</a>
+<a name='L95'></a><a href='#L95'>95</a>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a>
+<a name='L114'></a><a href='#L114'>114</a>
+<a name='L115'></a><a href='#L115'>115</a>
+<a name='L116'></a><a href='#L116'>116</a>
+<a name='L117'></a><a href='#L117'>117</a>
+<a name='L118'></a><a href='#L118'>118</a>
+<a name='L119'></a><a href='#L119'>119</a>
+<a name='L120'></a><a href='#L120'>120</a>
+<a name='L121'></a><a href='#L121'>121</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import Storage from "./storage"
+import { openModal, closeModal } from "./modal"
+&nbsp;
+class UI {
+&nbsp;
+<span class="fstat-no" title="function not covered" >  st</span>atic renderCards() {
+    const cards = <span class="cstat-no" title="statement not covered" >document.querySelector(".cards")</span>
+<span class="cstat-no" title="statement not covered" >    cards.replaceChildren()</span>
+    const items = <span class="cstat-no" title="statement not covered" >Storage.getBooks()</span>
+<span class="cstat-no" title="statement not covered" >    if (items.length) {</span>
+<span class="cstat-no" title="statement not covered" >    items.forEach ( <span class="fstat-no" title="function not covered" >({</span>title, author, pages, language, publishDate, isRead, bookcover }, index) =&gt; {</span>
+      const newCard = <span class="cstat-no" title="statement not covered" >UI.htmlToElements(</span>
+        `&lt;article class="card" data-id="${index}" style="animation-delay: ${index*100}ms;"&gt;
+          &lt;figure&gt;
+            &lt;img src="${bookcover ? bookcover : './images/placeholder.jpg'}" alt="${title}"&gt;
+            &lt;figcaption&gt;&lt;h2 class="card-title"&gt;${title}&lt;/h2&gt;&lt;/figcaption&gt;
+          &lt;/figure&gt;
+          &lt;ul class="card-meta"&gt;
+            &lt;li&gt;&lt;i class="icon-account-edit" aria-label="Author" title="Author"&gt;&lt;/i&gt;&lt;span&gt;By ${author}&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;i class="icon-pages" aria-label="Number of pages" title="Number of pages"&gt;&lt;/i&gt;&lt;span&gt;${pages} pages&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;i class="icon-translate" aria-label="Language" title="Language"&gt;&lt;/i&gt;&lt;span&gt;${language}&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;i class="icon-calendar-clock" aria-label="Publish date" title="Publish date"&gt;&lt;/i&gt;&lt;span&gt;${new Date(publishDate).toLocaleDateString('en-GB')}&lt;/span&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;div class="isread-toggle"&gt;
+            &lt;small&gt;Is Read?&lt;/small&gt;
+            &lt;div class="switch-field"&gt;
+              &lt;input type="radio" id="toggle-radio-${index}-yes" name="isreadradio-${index}" value="yes" ${isRead ? 'checked' : ''} onInput="handleToggleRead({item: ${index}, value: true})"&gt;
+              &lt;label for="toggle-radio-${index}-yes"&gt;Yes&lt;/label&gt;
+              &lt;input type="radio" id="toggle-radio-${index}-no" name="isreadradio-${index}" value="no" ${!isRead ? 'checked' : ''} onInput="handleToggleRead({item: ${index}, value: false})"&gt;
+              &lt;label for="toggle-radio-${index}-no"&gt;No&lt;/label&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;i class="icon-close" aria-label="Delete book" onClick="handleDelete(this.parentNode.getAttribute('data-id'))"&gt;&lt;/i&gt;
+        &lt;/article&gt;`)
+<span class="cstat-no" title="statement not covered" >    cards.appendChild(newCard[0])</span>
+    })
+    } else {
+<span class="cstat-no" title="statement not covered" >      cards.textContent = "No books present in the library."</span>
+    }
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  st</span>atic htmlToElements (html) {
+    let template = <span class="cstat-no" title="statement not covered" >document.createElement('template')</span>
+<span class="cstat-no" title="statement not covered" >    template.innerHTML = html</span>
+<span class="cstat-no" title="statement not covered" >    return template.content.childNodes</span>
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  st</span>atic handleSortChange () {
+    const myLibrary = <span class="cstat-no" title="statement not covered" >Storage.getBooks()</span>
+    let sortedLibrary
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    switch (document.querySelector('#sort-selection').value) {</span>
+      case "title":
+<span class="cstat-no" title="statement not covered" >        sortedLibrary = myLibrary.sort(<span class="fstat-no" title="function not covered" >fu</span>nction(a, b) {</span>
+<span class="cstat-no" title="statement not covered" >          return a.title.localeCompare(b.title)</span>
+        });
+<span class="cstat-no" title="statement not covered" >        break</span>
+      case "author":
+<span class="cstat-no" title="statement not covered" >        sortedLibrary = myLibrary.sort(<span class="fstat-no" title="function not covered" >fu</span>nction(a, b) {</span>
+<span class="cstat-no" title="statement not covered" >          return a.author.localeCompare(b.author)</span>
+        });
+<span class="cstat-no" title="statement not covered" >        break</span>
+      case "language":
+<span class="cstat-no" title="statement not covered" >        sortedLibrary = myLibrary.sort(<span class="fstat-no" title="function not covered" >fu</span>nction(a, b) {</span>
+<span class="cstat-no" title="statement not covered" >          return a.language.localeCompare(b.language)</span>
+        });
+<span class="cstat-no" title="statement not covered" >        break</span>
+      case "pages":
+<span class="cstat-no" title="statement not covered" >        sortedLibrary = myLibrary.sort(<span class="fstat-no" title="function not covered" >fu</span>nction(a, b) {</span>
+<span class="cstat-no" title="statement not covered" >          return parseInt(a.pages) - parseInt(b.pages)</span>
+        });
+<span class="cstat-no" title="statement not covered" >        break</span>
+      case "isRead":
+<span class="cstat-no" title="statement not covered" >        sortedLibrary = myLibrary.sort(<span class="fstat-no" title="function not covered" >fu</span>nction(a, b) {</span>
+<span class="cstat-no" title="statement not covered" >          return b.isRead - a.isRead</span>
+        });
+<span class="cstat-no" title="statement not covered" >        break</span>
+      default:
+        // Default Sort: By date of addition to library
+<span class="cstat-no" title="statement not covered" >        sortedLibrary = myLibrary.sort(<span class="fstat-no" title="function not covered" >fu</span>nction(a, b) {</span>
+<span class="cstat-no" title="statement not covered" >          return Date.parse(a.dateOfAdd) - Date.parse(b.dateOfAdd)</span>
+        });
+    }
+<span class="cstat-no" title="statement not covered" >    Storage.setBooks(sortedLibrary)</span>
+  }
+&nbsp;
+  static handleAddBookButton = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >    document.querySelector('.bookcover').value="" </span>// Form reset does not reset hidden fields. Needs manual reset
+<span class="cstat-no" title="statement not covered" >    document.querySelector(".add-form").reset()</span>
+<span class="cstat-no" title="statement not covered" >    document.querySelector('.book-cover-preview').src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAUFBQUFBQYGBgYICQgJCAwLCgoLDBINDg0ODRIbERQRERQRGxgdGBYYHRgrIh4eIisyKigqMjw2NjxMSExkZIYBBQUFBQUFBgYGBggJCAkIDAsKCgsMEg0ODQ4NEhsRFBERFBEbGB0YFhgdGCsiHh4iKzIqKCoyPDY2PExITGRkhv/CABEIAMgAyAMBIgACEQEDEQH/xAAcAAEBAQEAAwEBAAAAAAAAAAAAAQYHAgQFAwj/2gAIAQEAAAAA/rMAAAFgAAALAAAAWAAAAsAAABYAAACwAAAFgAAALAMl4gHuaMFgGL2gBi9oCwDF7QOF9H1rF7QFgGL2gc22H2WL2gLAMXtMhkuuHh63uYvaAsAxf68L/LpPX/DiPxu+ZnaAsA47z78jpPzcQ+70noQLAP5i9QA2HeAWAZP1gD633wWAAAAsAAABYAAACwAAAFgAAALAAAAWAAAAsAAABf/EABcBAQEBAQAAAAAAAAAAAAAAAAABAgP/2gAIAQIQAAAA0AAAAAAAABQQCxZYBbcakA10S55gKIAAAAAAAAAf/8QAFwEBAQEBAAAAAAAAAAAAAAAAAAECA//aAAgBAxAAAADIAAAAAAAAAJQBLKAzN5tAzzWa6AIKAAAAAAAAAf/EAD0QAAECAwIIDAQFBQAAAAAAAAECAwQFBgAxEhYgMEBBUpMQESEiNDZRVWJ0dbETFHHCByNDc7JCYZHB0f/aAAgBAQABPwDSBeNJF40kXjSReNJF40kXjSReNJF4zDlXMfHfbhpbMIlLThbU4y1hIwk3i2Ni+4ZvuLY2L7hm+4tjYvuGb7i2Ni+4ZvuLY2L7hm+4tjYvuGb7i2Ni+4ZvuLY2L7hm+4tjYvuGb7i0tqSGmEb8kuEi4Z8t4aEPt4GGB2ZYvGYojoUz9Te9k5qN68SvyTn3ZYvGYojoUz9Te9k5U6rGcRUe78rFLYYbcIbSjk5BrVaj55ETuXLVFcReZcwFKA4sIXg8Mb14lfkXPuyxeMxRHQpn6m97Jypv+HyY2OciYOLS0l1eEttSOMJJvKbSKSQ8hgRCsqKyVYbiz/UrhjevEr8i592WLxmKI6FM/U3vZPBVNUsyNksMFK4xaeanUgbSrUrWjrb3yc2eKkOK5j6r0E6leHIccbabW44tKUJSVKUo8QAGs2gJhBzOHTEwbyXGiSOMdo1EG7gjevEr8i592WLxmKI6FM/U3vZNqpqlmRslhgpXGLTzU6kDaVZ992JeW88tS3FqJUpV5J4KQrAwnw5dMnPybmnj+n4VeG19nHG2W1uOLSlCUlSlKPEABrNqsqxycrMJCFSINJ+hdI1nw9gtIJ9FSGL+K1zmlcjrWpQ/7aXTGEmkI3FQrmE2r/IPYew2jevEr8i592WLxmIOp25FK5kyyAqLdmL5QDcgcQGEbPvvRLy3nnFLcWrjUpXKScikKwEIG5dMnPyLmXj+n4VeG1WVWucOGEhFFMGlX0LpGs+HsHDIZ9FyGLDrRwmlcjrRuWP9HsNm5jCTSrpPFQrmEhUC59UnnchyxeMxH9Oi/wB9z+WaoXrHDftufxyxeMxGUVIY2JdiFsuJW4oqVgLIBJtiBT2w/vLYgU9sP7y2IFPbD+8tiBT2w/vLYgU9sP7y2IFPbD+8tiBT2w/vLYgU9sP7y2IFPbD+8tKaZlEmeU/CtK+IU4OGtWEQP7ZYvGki8aSLxpIvGki8aSLxpIvGki8aSLxb/8QAHxEAAQMFAQEBAAAAAAAAAAAAAQARUQIQITBBUBIx/9oACAECAQE/APXCxCxCxCxCxGjhvS3Uf1DRwqml1VTFvnCHdFIe7B3sR3S5lOZTmU5lOfZ//8QAHhEAAQMFAQEAAAAAAAAAAAAAAAERUQIQITBBUBL/2gAIAQMBAT8A9jMmZMyZkzo7ep+CC6OlVTFNU2+si6Kla7qzWReaWSBkgZIGSBk9n//Z"</span>
+<span class="cstat-no" title="statement not covered" >    openModal()</span>
+  }
+&nbsp;
+  static handleSubmit = <span class="fstat-no" title="function not covered" >(e</span>) =&gt; {
+<span class="cstat-no" title="statement not covered" >    e.preventDefault()</span>
+<span class="cstat-no" title="statement not covered" >    closeModal(e)</span>
+    const formData = <span class="cstat-no" title="statement not covered" >new FormData(e.target)</span>
+    const formProps = <span class="cstat-no" title="statement not covered" >Object.fromEntries(formData)</span>
+<span class="cstat-no" title="statement not covered" >    Storage.addBookToLibrary (formProps)</span>
+  }
+&nbsp;
+  static previewFile = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+    const preview = <span class="cstat-no" title="statement not covered" >document.querySelector('.book-cover-preview')</span>
+    const file = <span class="cstat-no" title="statement not covered" >document.querySelector('input[type=file]').files[0]</span>
+    const bookcover = <span class="cstat-no" title="statement not covered" >document.querySelector('.bookcover')</span>
+    const reader = <span class="cstat-no" title="statement not covered" >new FileReader()</span>
+  
+<span class="cstat-no" title="statement not covered" >    reader.addEventListener("load", <span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+      // convert image file to base64 string and store the value in hidden bookcover field
+<span class="cstat-no" title="statement not covered" >      preview.src = reader.result</span>
+<span class="cstat-no" title="statement not covered" >      bookcover.value = reader.result</span>
+    }, false)
+  
+<span class="cstat-no" title="statement not covered" >    if (file) {</span>
+<span class="cstat-no" title="statement not covered" >      reader.readAsDataURL(file)</span>
+    }
+  }
+&nbsp;
+}
+&nbsp;
+export default UI</pre></td></tr></table></pre>
+
+                <div class='push'></div><!-- for sticky footer -->
+            </div><!-- /wrapper -->
+            <div class='footer quiet pad2 space-top1 center small'>
+                Code coverage generated by
+                <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+                at 2023-03-03T22:52:15.209Z
+            </div>
+        <script src="prettify.js"></script>
+        <script>
+            window.onload = function () {
+                prettyPrint();
+            };
+        </script>
+        <script src="sorter.js"></script>
+        <script src="block-navigation.js"></script>
+    </body>
+</html>
+    

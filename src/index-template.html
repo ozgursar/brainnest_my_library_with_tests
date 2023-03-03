@@ -42,7 +42,7 @@
     </section>
     <small>Designed by <a href="https://github.com/ozgursar" target="_blank">Ozgur Sar</a> as an assignment for Brainnest</small>
   </footer>
-  <dialog open class="modal" aria-modal="true">
+  <dialog class="modal" aria-modal="true">
     <div class="modal-content">
       <div class="close-container"><i class="icon-close"></i></div>
       <form class="add-form" aria-label="Add Book Form">
@@ -55,13 +55,13 @@
                 type="text"
                 name="title"
                 id="title"
-                pattern="([^\s][A-z0-9À-ž\s\-]+)"
-                title="Min. 2 characters. Only numbers, letters or dash."
+                pattern="([^\s][A-z0-9À-ž\s\-\?]+)"
+                title="Min. 2 characters. Only numbers, letters, dash or question mark."
                 autocomplete="off"
-                placeholder="Min. 2 characters. Only numbers, letters or dash."
+                placeholder="Min. 2 characters. Only numbers, letters, dash or question mark."
                 required>
               <img src="./images/check.svg" alt="valid icon" class="check" width="13" height="13">
-              <small class="incorrect">* Min. 2 characters. Only numbers, letters or dash.</small>
+              <small class="incorrect">* Min. 2 characters. Only numbers, letters, dash or question mark.</small>
             </div>
             <div class="input-group">
               <label for="author">Author*</label>

@@ -9,10 +9,6 @@ class Book {
     this.bookcover = bookcover
     this.dateOfAdd = new Date()
   }
-  toggleRead = function () {
-    this.isRead = !this.isRead
-    console.log ("Read status: " + this.isRead)
-  }
 }
 
 export default Book

@@ -1,0 +1,32 @@
+{
+  "name": "brainnest_my_library",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozgursar/brainnest_my_library.git"
+  },
+  "keywords": [],
+  "author": "ozgursar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ozgursar/brainnest_my_library/issues"
+  },
+  "homepage": "https://github.com/ozgursar/brainnest_my_library#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^29.4.3",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1",
+    "webpack-merge": "^5.8.0"
+  }
+}

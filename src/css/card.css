@@ -1,0 +1,112 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat( auto-fill, minmax(250px, 1fr) );
+  gap: 50px;
+}
+
+figure img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  object-position: center 30%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--card-background);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #999;
+  animation: fade-in 0.75s ease;
+  opacity: 0;
+  animation-fill-mode: forwards; /* Keep final state of animation */
+}
+
+.card-title {
+  text-align: center;
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-size: 1.6em;
+  padding: 0 15px;
+}
+
+.card-meta {
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+}
+
+.card-meta li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 4px 0;
+  padding: 4px 0;
+}
+
+.card-meta li:not(:last-child) {
+  border-bottom: 1px dashed var(--subtle-gray);
+}
+
+.card-meta i {
+  font-size: 1.1em;
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 8px;
+  color: #fff;
+  background-color: var(--header-background);
+}
+
+.card-meta span {
+  font-size: 0.9em;
+  text-transform: capitalize;
+}
+
+/* Delete icon for card */
+.card .icon-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  background-color: var(--accent);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.card .icon-close:hover {
+  background-color: var(--accent-hover);
+}
+
+/* Is Read toogle */
+.card .isread-toggle {
+  position: absolute;
+  bottom: 6px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.card .isread-toggle small {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  color: var(--secondary);
+}
+
+@keyframes fade-in
+{
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

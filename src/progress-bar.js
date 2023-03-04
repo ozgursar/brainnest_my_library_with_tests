@@ -2,12 +2,11 @@ import Storage from "./storage"
 
 class ProgressBar {
 
-  static async updateProgress (myLibrary) {
+  static updateProgress (myLibrary) {
     let progress = 0
     const progressBar = document.querySelector(".progress .bar")
     const progressAmount = document.querySelector(".pattern span")
     const noBooksRead = document.querySelector(".nobooksread")
-    //const myLibrary = await Storage.getBooks()
     const readBooks = myLibrary.filter((book) => {
       return book.isRead
     })

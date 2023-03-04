@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1677944518551" clover="3.2.0">
-  <project timestamp="1677944518551" name="All files">
+<coverage generated="1677945257878" clover="3.2.0">
+  <project timestamp="1677945257878" name="All files">
     <metrics statements="129" coveredstatements="65" conditionals="38" coveredconditionals="12" methods="32" coveredmethods="14" elements="199" coveredelements="91" complexity="0" loc="129" ncloc="129" packages="1" files="5" classes="5"/>
     <file name="book.js" path="/Users/buka/Desktop/Brainnest/brainnest_my_library_with_tests/src/book.js">
       <metrics statements="21" coveredstatements="21" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="4"/>

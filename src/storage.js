@@ -1,7 +1,6 @@
 import UI from "./ui"
 import ProgressBar from "./progress-bar"
 
-
 class Storage {
 
   // Simulate async database read
@@ -24,13 +23,16 @@ class Storage {
     })
   }
 
-  static async getBooks () {
-    let myLibrary = await Storage.simulateDbRead(1000)
+  static async getBooks (norender) {
+    if (!norender) {
+      UI.displaySpinner()
+    }
+    let myLibrary = await Storage.simulateDbRead(800)
     return myLibrary
   }
 
   static async setBooks (myLibrary, norender) {
-    await Storage.simulateDbWrite(myLibrary, 300)
+    await Storage.simulateDbWrite(myLibrary, 100)
     if (!norender) {
       UI.renderCards(myLibrary)
     }

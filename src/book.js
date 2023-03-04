@@ -29,9 +29,9 @@ class Book {
   }
 
   static async toggleRead ({item, value}) {
-    let myLibrary = await Storage.getBooks() 
-    myLibrary[item].isRead=value
     const norender = true
+    let myLibrary = await Storage.getBooks(norender) 
+    myLibrary[item].isRead=value
     Storage.setBooks(myLibrary, norender)
   }
 

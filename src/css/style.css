@@ -2,6 +2,7 @@
 @import "./form.css";
 @import "./card.css";
 @import "./progress-bar.css";
+@import "./spinner.css";
 
 :root {
   --accent: #FFD300;

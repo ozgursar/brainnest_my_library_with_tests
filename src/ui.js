@@ -4,6 +4,12 @@ import { openModal, closeModal } from "./modal"
 
 class UI {
 
+  static displaySpinner () {
+    const cards = document.querySelector(".cards")
+    const spinner = UI.htmlToElements(`<div class="lds-ring"><div></div><div></div><div></div></div>`)
+    cards.replaceChildren(spinner[0])  
+  }
+
   static renderCards(myLibrary) {
     const cards = document.querySelector(".cards")
     cards.replaceChildren()

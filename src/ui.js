@@ -1,4 +1,5 @@
 import Storage from "./storage"
+import Book from "./book"
 import { openModal, closeModal } from "./modal"
 
 class UI {
@@ -96,7 +97,7 @@ class UI {
     closeModal(e)
     const formData = new FormData(e.target)
     const formProps = Object.fromEntries(formData)
-    Storage.addBookToLibrary (formProps)
+    Book.addBookToLibrary (formProps)
   }
 
   static previewFile = () => {

@@ -13,8 +13,8 @@ class Book {
     this.dateOfAdd = new Date()
   }
 
-  static addBookToLibrary = ({title, author, pages, language, publishDate, isreadradio, bookcover}) => {
-    let myLibrary = Storage.getBooks()
+  static async addBookToLibrary ({title, author, pages, language, publishDate, isreadradio, bookcover}) {
+    let myLibrary = await Storage.getBooks()
     let isRead = false
     if (isreadradio === "yes") isRead = true
     const book = new Book (title, author, pages, language, publishDate, isRead, bookcover)
@@ -22,14 +22,14 @@ class Book {
     Storage.setBooks(myLibrary)
   }
 
-  static deleteBook = (targetIndex) => {
-    let myLibrary = Storage.getBooks() 
+  static async deleteBook (targetIndex) {
+    let myLibrary = await Storage.getBooks() 
     myLibrary.splice(targetIndex, 1)
     Storage.setBooks(myLibrary)
   }
 
-  static toggleRead = ({item, value}) => {
-    let myLibrary = Storage.getBooks() 
+  static async toggleRead ({item, value}) {
+    let myLibrary = await Storage.getBooks() 
     myLibrary[item].isRead=value
     const norender = true
     Storage.setBooks(myLibrary, norender)

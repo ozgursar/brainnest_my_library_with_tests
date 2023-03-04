@@ -4,10 +4,10 @@ import { openModal, closeModal } from "./modal"
 
 class UI {
 
-  static renderCards() {
+  static renderCards(myLibrary) {
     const cards = document.querySelector(".cards")
     cards.replaceChildren()
-    const items = Storage.getBooks()
+    const items = myLibrary
     if (items.length) {
     items.forEach ( ({title, author, pages, language, publishDate, isRead, bookcover }, index) => {
       const newCard = UI.htmlToElements(
@@ -46,8 +46,8 @@ class UI {
     return template.content.childNodes
   }
 
-  static handleSortChange () {
-    const myLibrary = Storage.getBooks()
+  static async handleSortChange () {
+    const myLibrary = await Storage.getBooks()
     let sortedLibrary
 
     switch (document.querySelector('#sort-selection').value) {

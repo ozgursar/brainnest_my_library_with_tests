@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/16</span>
+                <span class='fraction'>16/16</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>2/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/16</span>
+                <span class='fraction'>16/16</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -96,25 +96,25 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -123,26 +123,26 @@
 &nbsp;
 class ProgressBar {
 &nbsp;
-<span class="fstat-no" title="function not covered" >  st</span>atic updateProgress (myLibrary) {
-    let progress = <span class="cstat-no" title="statement not covered" >0</span>
-    const progressBar = <span class="cstat-no" title="statement not covered" >document.querySelector(".progress .bar")</span>
-    const progressAmount = <span class="cstat-no" title="statement not covered" >document.querySelector(".pattern span")</span>
-    const noBooksRead = <span class="cstat-no" title="statement not covered" >document.querySelector(".nobooksread")</span>
-    const readBooks = <span class="cstat-no" title="statement not covered" >myLibrary.filter(<span class="fstat-no" title="function not covered" >(b</span>ook) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >      return book.isRead</span>
+  static updateProgress (myLibrary) {
+    let progress = 0
+    const progressBar = document.querySelector(".progress .bar")
+    const progressAmount = document.querySelector(".pattern span")
+    const noBooksRead = document.querySelector(".nobooksread")
+    const readBooks = myLibrary.filter((book) =&gt; {
+      return book.isRead
     })
-<span class="cstat-no" title="statement not covered" >    if (readBooks.length) {</span>
-<span class="cstat-no" title="statement not covered" >      progress= Math.floor (readBooks.length / myLibrary.length * 100)</span>
-<span class="cstat-no" title="statement not covered" >      progressAmount.style.backgroundColor = "rgba(0,0,0,0.6)"</span>
-<span class="cstat-no" title="statement not covered" >      progressAmount.textContent = progress + "%"</span>
-<span class="cstat-no" title="statement not covered" >      noBooksRead.style.display = "none"</span>
+    if (readBooks.length) {
+      progress= Math.floor (readBooks.length / myLibrary.length * 100)
+      progressAmount.style.backgroundColor = "rgba(0,0,0,0.6)"
+      progressAmount.textContent = progress + "%"
+      noBooksRead.style.display = "none"
     } else {
-<span class="cstat-no" title="statement not covered" >      progressAmount.textContent = ""</span>
-<span class="cstat-no" title="statement not covered" >      progressAmount.style.backgroundColor = "transparent"</span>
-<span class="cstat-no" title="statement not covered" >      noBooksRead.style.display = "block"</span>
+      progressAmount.textContent = ""
+      progressAmount.style.backgroundColor = "transparent"
+      noBooksRead.style.display = "block"
     }
-<span class="cstat-no" title="statement not covered" >    progressBar.style.width = progress + "%"  </span>
-<span class="cstat-no" title="statement not covered" >    return progress</span>
+    progressBar.style.width = progress + "%"  
+    return progress
   }
 &nbsp;
 }
@@ -154,7 +154,7 @@ export default ProgressBar</pre></td></tr></table></pre>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-03-04T13:59:13.555Z
+                at 2023-03-04T15:41:58.539Z
             </div>
         <script src="prettify.js"></script>
         <script>

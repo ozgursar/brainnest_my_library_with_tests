@@ -19,20 +19,20 @@ class Book {
     if (isreadradio === "yes") isRead = true
     const book = new Book (title, author, pages, language, publishDate, isRead, bookcover)
     myLibrary.push (book)
-    Storage.setBooks(myLibrary)
+    await Storage.setBooks(myLibrary)
   }
 
   static async deleteBook (targetIndex) {
     let myLibrary = await Storage.getBooks() 
     myLibrary.splice(targetIndex, 1)
-    Storage.setBooks(myLibrary)
+    await Storage.setBooks(myLibrary)
   }
 
   static async toggleRead ({item, value}) {
     const norender = true
     let myLibrary = await Storage.getBooks(norender) 
     myLibrary[item].isRead=value
-    Storage.setBooks(myLibrary, norender)
+    await Storage.setBooks(myLibrary, norender)
   }
 
 }
